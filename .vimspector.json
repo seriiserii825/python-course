@@ -2,7 +2,13 @@
   "configurations": {
     "<name>: Launch": {
       "adapter": "debugpy",
-      "filetypes": [ "python" ],
+      "filetypes": ["python"],
+      "breakpoints": {
+        "exception": {
+          "all": "N",
+          "uncaught": "N"
+        }
+      },
       "configuration": {
         "name": "<name>: Launch",
         "type": "python",
