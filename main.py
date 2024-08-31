@@ -1,4 +1,6 @@
-from lessons.lesson009 import lesson009
+from lessons.lesson011 import lesson011
 
 
-lesson009()
+if __name__ == "__main__":
+    lesson011()
+
