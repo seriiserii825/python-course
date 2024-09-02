@@ -1,7 +1,8 @@
 
 
-from lessons.lesson20 import lesson20
+from lessons.lesson020 import lesson020
 
 
 if __name__ == "__main__":
-    lesson20()
+    lesson020()
+
