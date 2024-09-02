@@ -1,8 +1,7 @@
 
-
-from lessons.lesson020 import lesson020
+from lessons.yourLifeWeeks import yourLifeWeeks
 
 
 if __name__ == "__main__":
-    lesson020()
+  yourLifeWeeks()
 
