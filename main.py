@@ -1,4 +1,4 @@
-from lessons.tipCalculator import tipCalculator
+from lessons.randomHandle import randomHandle
 
 if __name__ == "__main__":
-    tipCalculator()
+  randomHandle()
