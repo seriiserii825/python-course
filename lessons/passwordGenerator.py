@@ -7,24 +7,16 @@ def passwordGenerator():
     nr_numbers = int(input(f"How many numbers would you like?\n"))
     nr_symbols = int(input(f"How many symbols would you like?\n"))
 
-    random_letters = []
-    random_numbers = []
-    random_symbols = []
+    password = ""
     for i in range(0, nr_letters):
-        random_item = random.choice(letters)
-        random_letters.append(random_item)
+        password += random.choice(letters)
     for i in range(0, nr_numbers):
-        random_item = random.choice(numbers)
-        random_numbers.append(random_item)
+        password += random.choice(numbers)
     for i in range(0, nr_symbols):
-        random_item = random.choice(symbols)
-        random_symbols.append(random_item)
-    result = random_letters + random_numbers + random_symbols
-    str = ''.join(result)
-    print(str)
-    # print(result)
-    random.shuffle(result)
-    str = ''.join(result)
-    print(str)
+        password += random.choice(symbols)
+    password = list(password)
+    random.shuffle(password)
+    password = ''.join(password)
+    print(f"Your password is: {password}")
     # print(result)
 passwordGenerator()
