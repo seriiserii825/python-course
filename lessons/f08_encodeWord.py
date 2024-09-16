@@ -3,7 +3,7 @@ def f08_encodeWord():
     test_w  = int(input('Width: '))
     test_h  = int(input('Height: '))
     coverage = 5
-    paintCalc(test_w,test_h,coverage)
+    paintCalc(width=test_w,height=test_h,can=coverage)
 
 
 def paintCalc(width, height, can = 5):
