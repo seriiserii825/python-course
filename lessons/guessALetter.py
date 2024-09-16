@@ -10,7 +10,10 @@ def guessALetter():
         display.append("_")
 
     end_of_game = False
+    attempts = 0;
     while not end_of_game:
+        attempts += 1
+        print(f'end_of_game: {end_of_game}')
         guess = input('Choose a letter: ').lower()
 
         for i, letter in enumerate(choose_word):
@@ -19,9 +22,12 @@ def guessALetter():
             else:
                 continue
 
-        print(display)
-
-        if "_" in display:
+        print(f'display: {display}')
+        has_underscore = "_" in display
+        print(f'has_underscore: {has_underscore}')
+        if not "_" in display:
             end_of_game = True
+            print('Your won')
+        print(f'attempts: {attempts}')
 
 guessALetter()
