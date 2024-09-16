@@ -4,24 +4,24 @@ def guessALetter():
     choose_word = random.choice(words);
     print(choose_word)
 
-    empty_array = []
-
+    display = []
     choose_word_length = len(choose_word);
     for _ in range(0, choose_word_length):
-        empty_array.append("_")
-    # print(empty_array)
+        display.append("_")
 
-    guess = input('Choose a letter: ').lower()
-    # print(guess)
+    end_of_game = False
+    while not end_of_game:
+        guess = input('Choose a letter: ').lower()
 
-    for i, letter in enumerate(choose_word):
-        # print(i)
-        if letter == guess:
-            empty_array[i] = letter
-        else:
-            continue
+        for i, letter in enumerate(choose_word):
+            if letter == guess:
+                display[i] = letter
+            else:
+                continue
 
-    print(empty_array)
+        print(display)
 
+        if "_" in display:
+            end_of_game = True
 
 guessALetter()
