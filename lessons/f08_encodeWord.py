@@ -1,5 +1,15 @@
-def f08_encodeWord(name, location):
-    print("Hi, my name is " + name)
-    print("I am from " + location)
+import math
+def f08_encodeWord():
+    test_w  = int(input('Width: '))
+    test_h  = int(input('Height: '))
+    coverage = 5
+    paintCalc(test_w,test_h,coverage)
 
-f08_encodeWord(location="New York", name="John")
+
+def paintCalc(width, height, can = 5):
+    square = width * height;
+    result = math.ceil(square/can)
+    print(f"You'l need {result} cans of paint")
+
+
+f08_encodeWord()
