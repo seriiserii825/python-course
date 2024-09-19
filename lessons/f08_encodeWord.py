@@ -6,8 +6,10 @@ def f08_encodeWord():
     direction = console.input("Type [green]'encode'[/], or [blue]'decode'[/]:") 
     text =console.input('Type your [yellow]message[/]:\n').lower()
     shift = int(console.input("Type the [blue]shif[/] number:\n"))
-    caesar(text=text, shift_amount=shift, alphabet=alphabet, direction=direction)
+    #when shift is greater than the length of the alphabet get the remainder
+    shift = shift % len(alphabet)
 
+    caesar(text=text, shift_amount=shift, alphabet=alphabet, direction=direction)
 def caesar(text, shift_amount, alphabet, direction):
     final_text = "" 
     alphabet_length = len(alphabet)
