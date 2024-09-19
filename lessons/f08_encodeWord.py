@@ -31,5 +31,11 @@ def caesar(text, shift_amount, alphabet, direction):
         else:
             final_text += letter
     print(f"The [blue]{direction}d[/] text is [green]{final_text}[/]")
+    go_again = console.input("Do you want to [blue]go again[/]? [green]yes[/] or [red]no[/]:")
+    if go_again == 'yes':
+        f08_encodeWord()
+    else:
+        console.print("[red]Goodbye!")
+        exit()
 
 f08_encodeWord()
