@@ -16,7 +16,7 @@ def calcMax():
         if item['bid'] > max:
             max = item['bid']
             name = item['name']
-    print(f"Won {name}, with bid: {max}")
+    print(f"Won {name}, with max bid: {max}")
 
 
 while True:
