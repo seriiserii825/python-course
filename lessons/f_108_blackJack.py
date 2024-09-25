@@ -44,7 +44,7 @@ def f_108_blackJack():
         user_score = calculateScore(user_cards)
         computers_score = calculateScore(computers_cards)
         print(Panel(f"User cards: [green]{user_cards}[/], score: [blue]{user_score}[/]"))
-        print(Panel(f"Computers first card: [yellow]{computers_cards[0]}"))
+        print(Panel(f"Computers first card: [blue]{computers_cards[0]}"))
 
         if user_score == 0 or computers_score == 0 or user_score > 21:
             is_game_over = True
