@@ -1,15 +1,13 @@
 def bubleSort():
-   """ Bubble Sort Algorithm""" 
-   arr = [5, 2, 9, 1, 5, 6]
-   n = len(arr)
+    my_arr = [5, 2, 9, 1, 5, 6]
+    print(f"my_arr: {my_arr}")
 
-   # Traverse through all array elements
-   for i in range(n):
-       # Last i elements are already sorted
-       for j in range(0, n-i-1):
-           # Traverse the array from 0 to n-i-1
-           # Swap if the element found is greater than the next element
-           if arr[j] > arr[j+1]:
-               arr[j], arr[j+1] = arr[j+1], arr[j]
-
-   return arr
+    def test1(arr):
+        """ Bubble Sort Algorithm""" 
+        n =len(arr)
+        for bypass in range(1, n):
+            for i in range(0, n - bypass):
+                if arr[i] > arr[i + 1]:
+                    # Swap the elements
+                    arr[i], arr[i + 1] = arr[i + 1], arr[i]
+    print(f"my_arr: {my_arr}")
