@@ -3,8 +3,8 @@ from lessons.l_02_zip_func import l_02_zip_func
 
 
 def mainFunc():
-    # l_02_zip_func()
     l_01_set()
+    # l_02_zip_func()
 
 
 if __name__ == "__main__":
