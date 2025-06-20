@@ -1,4 +1,4 @@
-def l_01_zip_func():
+def l_02_zip_func():
     fruits = ['apple', 'banana', 'cherry']
     quantity = [100, 200, 300]
     avalability = (True, False, True)
