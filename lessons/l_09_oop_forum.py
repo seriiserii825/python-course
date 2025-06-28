@@ -16,7 +16,7 @@ def l_09_oop_forum():
     class Forum:
         def __init__(self) -> None:
             self.users: List[User] = []
-            self.posts = []
+            self.posts: List[Post] = []
 
         def register_user(self, username, email):
             user = User(username=username, email=email)
