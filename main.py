@@ -6,6 +6,7 @@ from lessons.l_08_forin import l_08_forin
 from lessons.l_09_oop_forum import l_09_oop_forum
 from lessons.l_11_oop_polymorphism import l_11_oop_polymorphism
 from lessons.l_13_oop_log_decorator import l_13_oop_log_decorator
+from lessons.l_14_Path import l_14_Path
 
 
 def mainFunc():
@@ -16,7 +17,8 @@ def mainFunc():
     # l_08_forin()
     # l_09_oop_forum()
     # l_11_oop_polymorphism()
-    l_13_oop_log_decorator()
+    # l_13_oop_log_decorator()
+    l_14_Path()
 
 
 if __name__ == "__main__":
