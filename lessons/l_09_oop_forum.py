@@ -1,6 +1,3 @@
-from typing_extensions import List
-
-
 def l_09_oop_forum():
     class User:
         def __init__(self, username: str, email: str) -> None:
