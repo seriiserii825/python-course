@@ -13,4 +13,6 @@ def l_10_oop_inheritance():
             self.num_doors = num_doors
 
         def display_info(self):
-            return f"Car Make: {self.make}, Model: {self.model}, Doors: {self.num_doors}"
+            return (
+                f"Car Make: {self.make}, Model: {self.model}, Doors: {self.num_doors}"
+            )

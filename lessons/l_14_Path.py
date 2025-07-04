@@ -10,7 +10,7 @@ def l_14_Path():
     print(f"current_dir: {current_dir}")
 
     # create path
-    new_path = Path('usr').joinpath('local', 'bin')
+    new_path = Path("usr").joinpath("local", "bin")
     print(f"new_path: {new_path}")
 
     # check if path exists

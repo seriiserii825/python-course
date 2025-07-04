@@ -11,7 +11,7 @@ def l_08_forin():
     for key, value in my_dict.items():
         print(f"{key}: {value}")
 
-    my_list = ['apple', 'banana', 'cherry']
+    my_list = ["apple", "banana", "cherry"]
 
     for index, value in enumerate(my_list):
         print(f"Index: {index}, Value: {value}")

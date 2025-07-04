@@ -11,7 +11,7 @@ def l_05_extract_dict():
 
     # background will be overwritten
 
-    print(f'{red_button}: red_button')
+    print(f"{red_button}: red_button")
     # {'color': 'white', 'background': 'red'}: red_button
 
     button_1 = {

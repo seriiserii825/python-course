@@ -24,8 +24,8 @@ def l_09_oop_forum():
             self.posts.append(post)
 
     forum = Forum()
-    forum.register_user('Serii', 'serii@mail.com')
-    forum.create_post('title', 'post content', 'serii')
+    forum.register_user("Serii", "serii@mail.com")
+    forum.create_post("title", "post content", "serii")
 
     print(forum.posts)
     print(forum.users)

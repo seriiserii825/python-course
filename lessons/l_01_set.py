@@ -53,7 +53,7 @@ def l_01_set():
     # post_ids = {123, 123, 456, 789, 123}
     post_ids.update({101, 102})
     print(f"post_ids after update: {post_ids}")  # {101, 102, 123, 456, 789}
-    
+
     # issuperset
     # post_ids = {123, 456, 789}
     post_ids5 = {123, 456}
@@ -71,5 +71,3 @@ def l_01_set():
     post_ids7 = {123, 456, 789}
     popped_item = post_ids7.pop()  # removes and returns an arbitrary element
     print(f"popped item: {popped_item}")  # could be any of the elements
-
-
